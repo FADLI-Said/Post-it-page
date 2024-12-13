@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Roboto&display=swap");
+
+#formulaire {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+}
+
+#post-it {
+  height: max-content;
+}
+
+.carte:nth-child(even) {
+  -o-transform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  position: relative;
+  top: 5px;
+  background: #eb7b6c;
+  border: white solid 0.1rem;
+}
+
+.carte:nth-child(odd) {
+  -o-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  position: relative;
+  top: -5px;
+  border: white solid 0.1rem;
+  background: #81acae;
+}
+
+.carte:nth-child(3n) {
+  -o-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  position: relative;
+  top: -5px;
+  background: #fffd75;
+}
+
+.carte:nth-child(5n) {
+  -o-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  position: relative;
+  top: -10px;
+}
+
+#description {
+  resize: none;
+  height: 50%;
+}
+
+.carte:hover {
+  box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
+  transform: scale(1.25);
+  position: relative;
+  z-index: 5;
+  cursor: pointer;
+}
+
+body {
+  background-image: url("../images/DALL·E\ 2024-12-12\ 10.28.57\ -\ A\ visually\ appealing\ background\ for\ a\ website\ featuring\ a\ clean\,\ modern\ design\ with\ abstract\ shapes\ and\ soft\ gradients.\ The\ image\ uses\ complementary\ c.webp");
+  background-size: cover;
+}
+
+#formulaire label {
+  font-family: "Patrick Hand", sans-serif;
+}
+
+#post-it h5 {
+  font-family: "Gloria Hallelujah", cursive; /* Exemple avec Gloria Hallelujah */
+}
+
+#post-it p {
+  font-family: "Caveat", cursive;
+}
+
+
+@media(max-width: 850px){
+    .carte:hover{
+        transform: scale(1);
+    }
+}
