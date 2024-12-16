@@ -8,7 +8,7 @@ document.getElementById("annuler").addEventListener("click", function () {
 });
 
 document.getElementById("valider").addEventListener("click", function () {
-    validateInputs();
+    validerInput();
 });
 
 document.getElementById("supprimer").addEventListener("click", function () {
